@@ -350,3 +350,59 @@ padding: 10px 0;
         font-size: 24px;
     }
 }
+/*------------------------Scrolling Animation----------------------*/
+#course {
+animation: leftscrolling 1s ease-in both;
+animation-timeline: view();
+animation-range: entry 50% cover 50%;
+}
+#campus{
+    animation: scrolling 1s ease-in both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;  
+}
+#Facilities{
+    animation: rightscrolling 1s ease-in both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%; 
+}
+.testinomials{
+    animation: scrolling 1s ease-in both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%; 
+}
+.cta{
+    animation:  scrolling 1s ease-in both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%; 
+}
+@keyframes scrolling {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes leftscrolling {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes rightscrolling {
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
